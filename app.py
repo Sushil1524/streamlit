@@ -162,8 +162,7 @@ if st.button("Book An Appoitment"):
     redirect_js = """ <script>window.location.href='localhost:3000/appointment.html'</script>"""
     st.components.v1.html(redirect_js)
 
-if __name__ == "__main__"":
-    main()
+
     
 
                     

@@ -137,9 +137,9 @@ def vis_results_3d(input_embed):
     fig.show()
 
 # Configure Streamlit page and state
-st.title("Detect your character's mental disorder! :books: :mag:")
+st.title("Detect your children's mental disorder if any! :books: :mag:")
 st.markdown(
-    "This mini-app predicts top-5 most likely mental disorders based on your description. The more information you provide, the more informative the results will be."
+    "This web-app predicts top-5 most likely mental disorders based on your description. The more information you provide, the more informative the results will be."
 )
 st.caption("NOTE: This is just a preliminary diagnosis based on previous medical data by ICD\n Consult a doctor for better analysis.")
 input = st.text_input(label="Your description", placeholder="Insert a description of your character")

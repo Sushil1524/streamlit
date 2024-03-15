@@ -152,7 +152,7 @@ if input:
         st.write(f":green[*Prediction number*] :{i}: :")
         st.write(f"{dis} (similarity score:", value, ")")
         i+= 1
-   st.markdown("[Book an Appointment](https://localhost:5500/appointment.html)", unsafe_allow_html=True)     
+    st.markdown("[Book an Appointment](https://localhost:5500/appointment.html)", unsafe_allow_html=True)     
     text_spinner_placeholder = st.empty()
     # with st.spinner("Please wait while your visualizations are being generated..."):
     #     time.sleep(5)

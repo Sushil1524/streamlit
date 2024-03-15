@@ -28,10 +28,10 @@ def convert_string_to_numpy_array(s):
 #load the model
 @st.cache_resource
 def get_models():
-  st.write('*Loading the model...*')
+  
   name = "stsb-bert-large"
   model = SentenceTransformer(name)
-  st.write("*The app is loaded and ready to use! :tada:*")
+  
   lemmatizer = WordNetLemmatizer()
   return model, lemmatizer
 

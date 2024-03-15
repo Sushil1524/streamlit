@@ -159,8 +159,8 @@ if input:
     # vis_results_2d(input_embed)
     # vis_results_3d(input_embed)
 if st.button("Book An Appoitment"):
-redirect_js = """ <script>window.location.href='localhost:3000/appointment.html'</script>"""
-st.write(redirect_js, unsafe_allow_html=True)
+    redirect_js = """ <script>window.location.href='localhost:3000/appointment.html'</script>"""
+    st.write(redirect_js, unsafe_allow_html=True)
     
 
                     

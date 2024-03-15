@@ -141,7 +141,7 @@ st.title("Detect your character's mental disorder! :books: :mag:")
 st.markdown(
     "This mini-app predicts top-5 most likely mental disorders based on your description. The more information you provide, the more informative the results will be."
 )
-st.caption("Note that this app can't be used for diagnostic purposes.")
+st.caption("NOTE: This is just a preliminary diagnosis based on previous medical data by ICD\n Consult a doctor for better analysis.")
 input = st.text_input(label="Your description", placeholder="Insert a description of your character")
 if input:
     input_embed = model.encode(input)
@@ -154,10 +154,10 @@ if input:
         i+= 1
         
     text_spinner_placeholder = st.empty()
-    # with st.spinner("Please wait while your visualizations are being generated..."):
-    #     time.sleep(5)
-    # vis_results_2d(input_embed)
-    # vis_results_3d(input_embed)
+    with st.spinner("Please wait while your visualizations are being generated..."):
+        time.sleep(5)
+    vis_results_2d(input_embed)
+    vis_results_3d(input_embed)
 
     
 

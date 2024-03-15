@@ -154,10 +154,10 @@ if input:
         i+= 1
         
     text_spinner_placeholder = st.empty()
-    with st.spinner("Please wait while your visualizations are being generated..."):
-        time.sleep(5)
-    vis_results_2d(input_embed)
-    vis_results_3d(input_embed)
+    # with st.spinner("Please wait while your visualizations are being generated..."):
+    #     time.sleep(5)
+    # vis_results_2d(input_embed)
+    # vis_results_3d(input_embed)
 
     
 

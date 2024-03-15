@@ -152,15 +152,13 @@ if input:
         st.write(f":green[*Prediction number*] :{i}: :")
         st.write(f"{dis} (similarity score:", value, ")")
         i+= 1
-    st.markdown("[Book an Appointment](https://localhost:5500/appointment.html)", unsafe_allow_html=True)     
+    st.markdown("<center><a href='https://localhost:5500/appointment.html'><button style='padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;'>Book an Appointment</button></a></center>", unsafe_allow_html=True)     
     text_spinner_placeholder = st.empty()
     # with st.spinner("Please wait while your visualizations are being generated..."):
     #     time.sleep(5)
     # vis_results_2d(input_embed)
     # vis_results_3d(input_embed)
-if st.button("Book An Appoitment"):
-    redirect_js = """ <script>window.location.href='localhost:5500/appointment.html'</script>"""
-    st.components.v1.html(redirect_js)
+
 
 
     
